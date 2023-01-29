@@ -1,0 +1,67 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #999;
+}
+.calculadora {
+    display: grid;
+    margin-top: 48px;
+    background-color: #333;
+    width: 100%;
+    min-width: 300px;
+    text-align: center;
+    height: 400px;
+    padding: 30px;
+    grid-template-areas: 
+    "resultado resultado resultado resultado"
+    "primeira-linha primeira-linha primeira-linha primeira-linha"
+    "segunda-linha segunda-linha segunda-linha segunda-linha"
+    "terceira-linha terceira-linha terceira-linha terceira-linha"
+    "quarta-linha quarta-linha quarta-linha quarta-linha";
+}
+
+
+
+button {
+    cursor: pointer;
+    padding: 18px;
+    margin: 4px;
+    font-size: 32px;
+    
+}
+
+button:hover {
+    background-color: #888;
+    color: #fff;
+}
+
+.resultado{
+    background-color: #999;
+    color: #fff;
+    grid-area: resultado;
+    padding: 16px;
+    margin: 4px;
+    margin-left: 78px;
+    font-size: 32px;
+    max-width: 200px;
+}
+
+.primeira-linha {
+    grid-area: primeira-linha;
+}
+
+.segunda-linha {
+    grid-area: segunda-linha;
+}
+
+.terceira-linha {
+    grid-area: terceira-linha;
+}
+
+.quarta-linha {
+    grid-area: quarta-linha;
+}
+
+
